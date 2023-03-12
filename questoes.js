@@ -1,3 +1,5 @@
+//Questão 1
+
 function quest1() {
 
     let index = 13
@@ -14,6 +16,8 @@ function quest1() {
 }
 
 // Na questão 1 o valor da variável é de 91
+
+// Questão 2
 
 function quest2(number) {
 
@@ -54,7 +58,7 @@ para encontrar o tempo que cada veículo leva para chegar ao
 ponto de cruzamento. Para o carro, temos:
 
 distância = velocidade x tempo
-100 km = 110 km/h x tempo
+100 km = 110 km/h * tempo
 tempo = 100 km / 110 km/h
 tempo = 0,91 h
 
@@ -70,19 +74,41 @@ tempo = 100 km / 80 km/h + 0,1666 h
 tempo = 1,25 h
 
 Para calcular a distância que cada veículo está de Ribeirão Preto
-no momento do cruzamento, basta multiplicar a velocidade de cada
+no momento do cruzamento, devemos multiplicar a velocidade de cada
 veículo pelo tempo que ele leva para chegar ao ponto de cruzamento.
 Para o carro, temos:
 
-distância do carro de Ribeirão Preto = 110 km/h x 0,91 h
+distância do carro de Ribeirão Preto = 110 km/h * 0,91 h
 distância do carro de Ribeirão Preto = 100 km
 
 Para o caminhão, temos:
 
-distância do caminhão de Ribeirão Preto = 80 km/h x 1,25 h
+distância do caminhão de Ribeirão Preto = 80 km/h * 1,25 h
 distância do caminhão de Ribeirão Preto = 100 km
 
 Conclusão: No momento do cruzamento, tanto o carro quanto o caminhão estão 
 exatamente a mesma distância da cidade de Ribeirão Preto. Portanto, nenhum 
 deles está mais próximo da cidade de Ribeirão Preto.
- */
+*/
+
+
+// Questão 5
+
+function quest5(string) {
+
+    if (typeof string !== 'string') return "Informe uma string"
+
+    let newString = ''
+
+    for (let i = string.length - 1; i >= 0; i--) {
+
+        newString += string[i]
+    }
+    return newString
+}
+
+/*
+    A função verifica se a entrada é uma string, caso não seja retonar um aviso, caso seja
+    entra em um for loop lendo a string de trás pra frente e adicionando os caracteres em uma nova variavel
+*/
+
